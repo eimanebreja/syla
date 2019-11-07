@@ -1,0 +1,848 @@
+nav {
+    max-width: 1300px;
+    margin: 0 auto;
+    width: 100%;
+
+    .nav-area {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        .nav-logo {
+            img {
+                width: 70%;
+            }
+
+        }
+
+        .nav-menu {
+            ul {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                li {
+                    padding: 0px 15px;
+                    list-style: none;
+                    text-align: center;
+
+                    .list-menu {
+                        font-family: "Caflisch Script Pro";
+                        text-decoration: none;
+                        color: #886d54;
+                        font-size: 25px;
+                        text-align: center;
+                        line-height: 1.5;
+
+                        span {
+                            display: block;
+                            font-size: 10px;
+
+                        }
+
+                        img {
+                            width: 50px;
+                            height: 55px;
+                            text-align: center;
+
+                        }
+                    }
+                }
+
+                .bubbles {
+                    background: #e3d0c4;
+                    width: 70px;
+                    padding: 0px 0px;
+                    margin: 0 auto;
+                    text-align: center;
+
+                    .list-menu {
+                        img {
+                            width: 40px;
+                        }
+
+                        span {
+                            margin-top: -20px;
+                            color: white;
+                        }
+                    }
+                }
+
+                .message {
+                    background: #886d54;
+                    width: 70px;
+                    padding: 0px 0px;
+                    margin: 0 auto;
+                    text-align: center;
+
+                    .list-menu {
+                        img {
+                            width: 35px;
+                        }
+
+                        span {
+                            margin-top: -20px;
+                            color: white;
+
+                        }
+                    }
+                }
+            }
+
+        }
+
+    }
+}
+
+@media (min-width: 992px) and (max-width:1200px) {
+    nav {
+        max-width: 1300px;
+        margin: 0 auto;
+        width: 100%;
+
+        .nav-area {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+            .nav-logo {
+                img {
+                    width: 70%;
+                }
+
+            }
+
+            .nav-menu {
+                ul {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    li {
+                        padding: 0px 15px;
+                        list-style: none;
+                        text-align: center;
+
+                        .list-menu {
+                            font-family: "Caflisch Script Pro";
+                            text-decoration: none;
+                            color: #886d54;
+                            font-size: 18px;
+                            text-align: center;
+                            line-height: 1.5;
+
+                            span {
+                                display: block;
+                                font-size: 6px;
+
+                            }
+
+                            img {
+                                width: 50px;
+                                height: 55px;
+                                text-align: center;
+
+                            }
+                        }
+                    }
+
+                    .bubbles {
+                        background: #e3d0c4;
+                        width: 70px;
+                        padding: 0px 0px;
+                        margin: 0 auto;
+                        text-align: center;
+
+                        .list-menu {
+                            img {
+                                width: 30px;
+                            }
+
+                            span {
+                                margin-top: -20px;
+                                color: white;
+                            }
+                        }
+                    }
+
+                    .message {
+                        background: #886d54;
+                        width: 70px;
+                        padding: 0px 0px;
+                        margin: 0 auto;
+                        text-align: center;
+
+                        .list-menu {
+                            img {
+                                width: 25px;
+                            }
+
+                            span {
+                                margin-top: -20px;
+                                color: white;
+
+                            }
+                        }
+                    }
+                }
+
+            }
+
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width:991px) {
+
+    .sp {
+        display: block;
+    }
+
+    nav {
+        max-width: 1300px;
+        margin: 0 auto;
+        width: 100%;
+
+        .nav-area {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+            .nav-logo {
+                img {
+                    width: 70%;
+                }
+
+            }
+
+            .nav-menu {
+                display: none;
+
+                ul {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    li {
+                        padding: 0px 15px;
+                        list-style: none;
+                        text-align: center;
+
+                        .list-menu {
+                            font-family: "Caflisch Script Pro";
+                            text-decoration: none;
+                            color: #886d54;
+                            font-size: 18px;
+                            text-align: center;
+                            line-height: 1.5;
+
+                            span {
+                                display: block;
+                                font-size: 6px;
+
+                            }
+
+                            img {
+                                width: 50px;
+                                height: 55px;
+                                text-align: center;
+
+                            }
+                        }
+                    }
+
+                    .bubbles {
+                        background: #e3d0c4;
+                        width: 70px;
+                        padding: 0px 0px;
+                        margin: 0 auto;
+                        text-align: center;
+
+                        .list-menu {
+                            img {
+                                width: 30px;
+                            }
+
+                            span {
+                                margin-top: -20px;
+                                color: white;
+                            }
+                        }
+                    }
+
+                    .message {
+                        background: #886d54;
+                        width: 70px;
+                        padding: 0px 0px;
+                        margin: 0 auto;
+                        text-align: center;
+
+                        .list-menu {
+                            img {
+                                width: 25px;
+                            }
+
+                            span {
+                                margin-top: -20px;
+                                color: white;
+
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            .menu-button {
+                .icon-set {
+                    a {
+                        display: block;
+                        width: 80px;
+                        height: 80px;
+                        position: absolute;
+                        top: -1%;
+                        right: 0;
+                        cursor: pointer;
+
+                        span {
+                            display: block;
+                            width: 30px;
+                            height: 4px;
+                            background: #886d54;
+                            position: absolute;
+                            left: 0;
+                            right: 0;
+                            margin: auto;
+
+                            &:nth-child(1) {
+                                top: 38px;
+                                opacity: 1;
+                                transition: 0.3s ease-in-out 0.5s;
+                            }
+
+                            &:nth-child(2) {
+                                top: 38px;
+                                transform: rotate(0deg);
+                                transition: 0.3s ease-in-out;
+                            }
+
+                            &:nth-child(3) {
+                                top: 30px;
+                                transform: rotate(0deg);
+                                transition: 0.3s ease-in-out;
+                            }
+
+                            &:nth-child(4) {
+                                bottom: 30px;
+                                opacity: 1;
+                                transition: 0.3s ease-in-out 0.5s;
+                            }
+                        }
+
+                        &.is-active {
+                            span {
+                                display: block;
+                                width: 30px;
+                                height: 4px;
+                                background: #886d54;
+                                position: absolute;
+                                left: 0;
+                                right: 0;
+                                margin: auto;
+
+                                &:nth-child(1) {
+                                    top: 26px;
+                                    opacity: 0;
+                                    transition: 0.3s ease-in-out;
+                                }
+
+                                &:nth-child(2) {
+                                    top: 40px;
+                                    transform: rotate(45deg);
+                                    transition: 0.3s ease-in-out 0.5s;
+                                }
+
+                                &:nth-child(3) {
+                                    top: 40px;
+                                    transform: rotate(-45deg);
+                                    transition: 0.3s ease-in-out 0.5s;
+                                }
+
+                                &:nth-child(4) {
+                                    bottom: 26px;
+                                    opacity: 0;
+                                    transition: 0.3s ease-in-out;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .menu-wrap {
+                    position: absolute;
+                    top: 9%;
+                    left: 0%;
+                    right: 0%;
+                    width: 100%;
+                    height: calc(200vh - 10px);
+
+                    z-index: 100;
+                    background: #886d54ab;
+                    display: none;
+
+                    &.onn {
+                        display: block;
+                        overflow-y: auto;
+
+                        .content {
+                            .g-nav {
+                                margin-left: -10%;
+                                padding-top: 10%;
+                                padding-left: 15%;
+
+                                ul {
+                                    list-style: none;
+                                    display: block;
+                                    justify-content: flex-start;
+
+
+                                    li {
+                                        text-align: left;
+                                        margin: 0 18px;
+
+                                        a {
+                                            font-family: "Caflisch Script Pro";
+                                            color: white;
+                                            text-decoration: none;
+                                            padding-bottom: 6px;
+                                            position: relative;
+                                            font-size: 50px;
+                                            line-height: 1;
+
+
+                                            span {
+                                                font-family: none;
+                                                font-size: 20px;
+                                            }
+
+
+                                        }
+
+
+                                    }
+
+                                    li+li {
+                                        margin-top: 30px;
+                                    }
+                                }
+                            }
+
+                            .social-media-nav {
+                                padding-top: 3%;
+
+                                ul {
+                                    display: flex;
+                                    flex-direction: row;
+                                    justify-content: center;
+
+                                    li {
+                                        margin: 2%;
+                                        list-style: none;
+                                        flex-basis: 10%;
+                                        text-align: center;
+
+                                        a {
+
+                                            text-decoration: none;
+
+                                            img {
+                                                width: 100%;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .email-link {
+                                margin-top: 3%;
+                                background: white;
+
+                                ul {
+                                    max-width: 500px;
+                                    margin: 0 auto;
+                                    display: flex;
+                                    flex-direction: row;
+                                    align-items: center;
+
+
+                                    li {
+                                        list-style: none;
+
+                                        flex-basis: 50%;
+                                        padding: 3%;
+
+                                        &:first-child {
+                                            border-right: 2px solid #886d54;
+                                        }
+
+                                        a {
+                                            text-decoration: none;
+                                            display: flex;
+                                            flex-direction: row;
+                                            align-items: center;
+                                            color: #886d54;
+
+                                            .image {
+                                                flex-basis: 30%;
+
+                                                img {
+                                                    width: 100%;
+
+                                                }
+                                            }
+
+                                            .desc {
+                                                flex-basis: 60%;
+                                                font-size: 14px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .sp {
+        display: block;
+    }
+
+    nav {
+        max-width: 1300px;
+        margin: 0 auto;
+        width: 100%;
+
+        .nav-area {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+            .nav-logo {
+                img {
+                    width: 70%;
+                }
+
+            }
+
+            .nav-menu {
+                display: none;
+
+                ul {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    li {
+                        padding: 0px 15px;
+                        list-style: none;
+                        text-align: center;
+
+                        .list-menu {
+                            font-family: "Caflisch Script Pro";
+                            text-decoration: none;
+                            color: #886d54;
+                            font-size: 18px;
+                            text-align: center;
+                            line-height: 1.5;
+
+                            span {
+                                display: block;
+                                font-size: 6px;
+
+                            }
+
+                            img {
+                                width: 50px;
+                                height: 55px;
+                                text-align: center;
+
+                            }
+                        }
+                    }
+
+                    .bubbles {
+                        background: #e3d0c4;
+                        width: 70px;
+                        padding: 0px 0px;
+                        margin: 0 auto;
+                        text-align: center;
+
+                        .list-menu {
+                            img {
+                                width: 30px;
+                            }
+
+                            span {
+                                margin-top: -20px;
+                                color: white;
+                            }
+                        }
+                    }
+
+                    .message {
+                        background: #886d54;
+                        width: 70px;
+                        padding: 0px 0px;
+                        margin: 0 auto;
+                        text-align: center;
+
+                        .list-menu {
+                            img {
+                                width: 25px;
+                            }
+
+                            span {
+                                margin-top: -20px;
+                                color: white;
+
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            .menu-button {
+                .icon-set {
+                    a {
+                        display: block;
+                        width: 80px;
+                        height: 80px;
+                        position: absolute;
+                        top: -1%;
+                        right: 0;
+                        cursor: pointer;
+
+                        span {
+                            display: block;
+                            width: 30px;
+                            height: 4px;
+                            background: #886d54;
+                            position: absolute;
+                            left: 0;
+                            right: 0;
+                            margin: auto;
+
+                            &:nth-child(1) {
+                                top: 38px;
+                                opacity: 1;
+                                transition: 0.3s ease-in-out 0.5s;
+                            }
+
+                            &:nth-child(2) {
+                                top: 38px;
+                                transform: rotate(0deg);
+                                transition: 0.3s ease-in-out;
+                            }
+
+                            &:nth-child(3) {
+                                top: 30px;
+                                transform: rotate(0deg);
+                                transition: 0.3s ease-in-out;
+                            }
+
+                            &:nth-child(4) {
+                                bottom: 30px;
+                                opacity: 1;
+                                transition: 0.3s ease-in-out 0.5s;
+                            }
+                        }
+
+                        &.is-active {
+                            span {
+                                display: block;
+                                width: 30px;
+                                height: 4px;
+                                background: #886d54;
+                                position: absolute;
+                                left: 0;
+                                right: 0;
+                                margin: auto;
+
+                                &:nth-child(1) {
+                                    top: 26px;
+                                    opacity: 0;
+                                    transition: 0.3s ease-in-out;
+                                }
+
+                                &:nth-child(2) {
+                                    top: 40px;
+                                    transform: rotate(45deg);
+                                    transition: 0.3s ease-in-out 0.5s;
+                                }
+
+                                &:nth-child(3) {
+                                    top: 40px;
+                                    transform: rotate(-45deg);
+                                    transition: 0.3s ease-in-out 0.5s;
+                                }
+
+                                &:nth-child(4) {
+                                    bottom: 26px;
+                                    opacity: 0;
+                                    transition: 0.3s ease-in-out;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .menu-wrap {
+                    position: absolute;
+                    top: 9%;
+                    left: 0%;
+                    right: 0%;
+                    width: 100%;
+                    height: calc(200vh - 10px);
+
+                    z-index: 100;
+                    background: #886d54ab;
+                    display: none;
+
+                    &.onn {
+                        display: block;
+                        overflow-y: auto;
+
+                        .content {
+                            .g-nav {
+                                margin-left: -10%;
+                                padding-top: 10%;
+                                padding-left: 15%;
+
+                                ul {
+                                    list-style: none;
+                                    display: block;
+                                    justify-content: flex-start;
+
+
+                                    li {
+                                        text-align: left;
+                                        margin: 0 18px;
+
+                                        a {
+                                            font-family: "Caflisch Script Pro";
+                                            color: white;
+                                            text-decoration: none;
+                                            padding-bottom: 6px;
+                                            position: relative;
+                                            font-size: 50px;
+                                            line-height: 1;
+
+
+                                            span {
+                                                font-family: none;
+                                                font-size: 20px;
+                                            }
+
+
+                                        }
+
+
+                                    }
+
+                                    li+li {
+                                        margin-top: 30px;
+                                    }
+                                }
+                            }
+
+                            .social-media-nav {
+                                padding-top: 3%;
+
+                                ul {
+                                    display: flex;
+                                    flex-direction: row;
+                                    justify-content: center;
+
+                                    li {
+                                        margin: 2%;
+                                        list-style: none;
+                                        flex-basis: 10%;
+                                        text-align: center;
+
+                                        a {
+
+                                            text-decoration: none;
+
+                                            img {
+                                                width: 100%;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .email-link {
+                                margin-top: 3%;
+                                background: white;
+
+                                ul {
+                                    max-width: 500px;
+                                    margin: 0 auto;
+                                    display: flex;
+                                    flex-direction: row;
+                                    align-items: center;
+
+
+                                    li {
+                                        list-style: none;
+
+                                        flex-basis: 50%;
+                                        padding: 3%;
+
+                                        &:first-child {
+                                            border-right: 2px solid #886d54;
+                                        }
+
+                                        a {
+                                            text-decoration: none;
+                                            display: flex;
+                                            flex-direction: row;
+                                            align-items: center;
+                                            color: #886d54;
+
+                                            .image {
+                                                flex-basis: 30%;
+
+                                                img {
+                                                    width: 100%;
+
+                                                }
+                                            }
+
+                                            .desc {
+                                                flex-basis: 60%;
+                                                font-size: 14px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
