@@ -60,14 +60,27 @@
                         <div class="form-input only-half">
                             <select name="sem_schedule" id="input-semschedule" class="sched_sel">
                                 <option value="">選択...</option>
-                                <option>11月13日(水) 19:00~21:30</option>
-                                <option>11月16日(土) 11:00~13:30</option>
-                                <option>11月20日(水) 19:00~21:30</option>
-                                <option>11月23日(土) 11:00~13:30</option>
-                                <option>11月27日(水) 19:00~21:30</option>
-                                <option>11月30日(土) 11:00~13:30</option>
-                                <option>12月04日(水) 19:00~21:30</option>
-                                <option>12月07日(土) 11:00~13:30</option>
+                                <option>11月16日（土曜）1部13:00~15:30</option>
+                                <option>11月16日（土曜）2部16:00~18:30</option>
+                                <option>11月18日（月曜）19:00~21:30</option>
+                                <option>11月19日（火曜）19:00~21:30</option>
+                                <option>11月20日（水曜）19:00~21:30</option>
+                                <option>11月21日（木曜）19:00~21:30</option>
+                                <option>11月22日（金曜）19:00~21:30</option>
+                                <option>11月23日（土曜）1部13:00~15:30</option>
+                                <option>11月23日（土曜）2部16:00~18:30</option>
+                                <option>11月25日（月曜）19:00~21:30</option>
+                                <option>11月26日（火曜）19:00~21:30</option>
+                                <option>11月27日（水曜）19:00~21:30</option>
+                                <option>11月28日（木曜）19:00~21:30</option>
+                                <option>11月29日（金曜）19:00~21:30</option>
+                                <option>11月30日（土曜）1部13:00~15:30</option>
+                                <option>11月30日（土曜）2部16:00~18:30</option>
+                                <option>12月2日（月曜）19:00~21:30</option>
+                                <option>12月3日（火曜）19:00~21:30</option>
+                                <option>12月4日（水曜）19:00~21:30</option>
+                                <option>12月5日（木曜）19:00~21:30</option>
+                                <option>12月6日（金曜）19:00~21:30</option>
                             </select>
                         </div>
                     </div>

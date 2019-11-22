@@ -102,9 +102,15 @@ nav .nav-area {
   .header-area .header-rate {
     position: absolute;
     bottom: 4%;
-    left: 22%; }
+    left: 22%;
+    text-align: center; }
     .header-area .header-rate span img {
       width: 30%; }
+    .header-area .header-rate .rate-text {
+      font-size: 15px;
+      color: white;
+      text-align: center;
+      font-family: a-otf-ryumin-pr6n, serif; }
 
 .m-entrance-sec .m-entrance-area {
   background-image: url(../img/m_entrance_bg.png);
@@ -195,11 +201,21 @@ nav .nav-area {
           padding-top: 1%; }
 
 .banner-sec {
+  position: relative;
   padding: 2% 0%;
   text-align: center; }
   .banner-sec img {
     width: 90%;
     margin: 0 auto; }
+  .banner-sec .text-banner {
+    position: absolute;
+    top: 17%;
+    left: 2%;
+    font-size: 30px;
+    transform-origin: 0 0;
+    transform: rotate(-20deg);
+    font-weight: 600;
+    color: red; }
 
 .invest-sec .invest-area .invest-title {
   padding: 5% 0%; }
@@ -307,6 +323,8 @@ nav .nav-area {
       margin: 0;
       padding: 2% 5% 2% 0; }
       .invest-sec .invest-area .syla-collapse .collapse-list .collapse-inner .collapse-content p {
+        -webkit-font-feature-settings: "palt";
+        font-feature-settings: "palt";
         font-weight: 600;
         font-family: a-otf-ryumin-pr6n, serif;
         line-height: 1.5;
@@ -397,12 +415,19 @@ nav .nav-area {
                 text-align: left;
                 line-height: 1.7; }
               .three-block-area .three-block-cont .three-blocks-base .three-blocks-bg .blocks-bg-cont .blocks-bg-flex .blocks-desc p {
+                width: 87%;
                 margin-top: 2%;
                 font-family: a-otf-ryumin-pr6n, serif;
                 text-align: left;
                 color: white;
                 line-height: 1.5;
                 font-weight: 600; }
+        .three-block-area .three-block-cont .three-blocks-base .three-blocks-bg .three-blocks-text-down {
+          position: absolute;
+          bottom: 5%;
+          right: 5%;
+          color: white;
+          font-size: 12px; }
 
 .ranking-sec .ranking-area-pc img {
   margin-bottom: -5%;
@@ -510,8 +535,10 @@ nav .nav-area {
     color: white;
     padding-bottom: 4%;
     text-align: left; }
-  .owner-sec .man-area .man-img img {
-    width: 100%; }
+  .owner-sec .man-area .man-img {
+    padding-bottom: 2%; }
+    .owner-sec .man-area .man-img img {
+      width: 100%; }
   .owner-sec .man-area .man-desc {
     margin-top: -1%;
     text-align: center; }
@@ -734,7 +761,36 @@ nav .nav-area {
       .sem-info-sec .sem-info-area .sem-info-container p.address {
         font-size: 27px; }
       .sem-info-sec .sem-info-area .sem-info-container p.other-detail {
-        padding-top: 8%; }
+        padding-top: 5%; }
+        .sem-info-sec .sem-info-area .sem-info-container p.other-detail .indent-text {
+          font-weight: normal; }
+    .sem-info-sec .sem-info-area .sem-info-container .address-info {
+      padding-top: 5%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap; }
+      .sem-info-sec .sem-info-area .sem-info-container .address-info .address-title-head {
+        flex-basis: 100%;
+        font-size: 30px;
+        color: white;
+        line-height: 1.6;
+        font-family: a-otf-ryumin-pr6n, serif;
+        text-align: center; }
+      .sem-info-sec .sem-info-area .sem-info-container .address-info .address-title {
+        flex-basis: 48%;
+        font-size: 30px;
+        color: white;
+        line-height: 1.6;
+        font-family: a-otf-ryumin-pr6n, serif;
+        text-align: right; }
+      .sem-info-sec .sem-info-area .sem-info-container .address-info .sub-adress {
+        flex-basis: 48%;
+        font-size: 30px;
+        color: white;
+        line-height: 1.6;
+        font-family: a-otf-ryumin-pr6n, serif;
+        text-align: left; }
   .sem-info-sec .sem-info-area .sem-maps iframe {
     width: 100%;
     height: 450px; }
@@ -811,7 +867,7 @@ nav .nav-area {
       .about-sec .about-area .about-info-logo .about-info-conts .about-info {
         padding: 0% 5%;
         display: flex;
-        align-items: center; }
+        align-items: flex-start; }
         .about-sec .about-area .about-info-logo .about-info-conts .about-info .title {
           font-family: a-otf-ryumin-pr6n, serif;
           flex-basis: 20%;
@@ -831,7 +887,7 @@ nav .nav-area {
     .about-sec .about-area .about-info-logo .about-logo {
       flex-basis: 30%; }
       .about-sec .about-area .about-info-logo .about-logo img {
-        width: 80%; }
+        width: 50%; }
 
 .bar-graph-area img {
   width: 100%;
@@ -881,7 +937,8 @@ nav .nav-area {
           opacity: .9; }
     .floating-sec .floating-area .yellow-btn {
       flex-basis: 30%;
-      text-align: center; }
+      text-align: center;
+      position: relative; }
       .floating-sec .floating-area .yellow-btn a img {
         margin: 0 auto;
         width: 95%; }
@@ -889,6 +946,16 @@ nav .nav-area {
           transition: all .4s;
           opacity: .9;
           transition: all .4s; }
+      .floating-sec .floating-area .yellow-btn .text-float {
+        text-align: left;
+        position: absolute;
+        top: 5%;
+        left: -1%;
+        font-size: 20px;
+        transform-origin: 0 0;
+        transform: rotate(-20deg);
+        font-weight: 600;
+        color: red; }
 
 .ft-area {
   padding: 1%;
@@ -1568,6 +1635,7 @@ nav .nav-area {
                   text-align: left;
                   line-height: 1.7; }
                 .three-block-area .three-block-cont .three-blocks-base .three-blocks-bg .blocks-bg-cont .blocks-bg-flex .blocks-desc p {
+                  width: 100%;
                   font-size: 10px;
                   margin-top: 2%;
                   font-family: a-otf-ryumin-pr6n, serif;
@@ -1826,6 +1894,33 @@ nav .nav-area {
         font-size: 17px; }
       .sem-info-sec .sem-info-area .sem-info-container p.other-detail {
         padding-top: 8%; }
+    .sem-info-sec .sem-info-area .sem-info-container .address-info {
+      padding-top: 5%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap; }
+      .sem-info-sec .sem-info-area .sem-info-container .address-info .address-title-head {
+        flex-basis: 100%;
+        font-size: 20px;
+        color: white;
+        line-height: 1.6;
+        font-family: a-otf-ryumin-pr6n, serif;
+        text-align: center; }
+      .sem-info-sec .sem-info-area .sem-info-container .address-info .address-title {
+        flex-basis: 48%;
+        font-size: 20px;
+        color: white;
+        line-height: 1.6;
+        font-family: a-otf-ryumin-pr6n, serif;
+        text-align: right; }
+      .sem-info-sec .sem-info-area .sem-info-container .address-info .sub-adress {
+        flex-basis: 48%;
+        font-size: 20px;
+        color: white;
+        line-height: 1.6;
+        font-family: a-otf-ryumin-pr6n, serif;
+        text-align: left; }
   .sem-info-sec .sem-info-area .sem-maps img {
     width: 100%; }
 
@@ -2014,7 +2109,12 @@ nav .nav-area {
       right: 0%;
       text-align: center; }
       .header-area .header-rate span img {
-        width: 15%; }
+        width: 20%; }
+      .header-area .header-rate .rate-text {
+        font-size: 12px;
+        color: white;
+        text-align: center;
+        font-family: a-otf-ryumin-pr6n, serif; }
 
   .m-entrance-sec .m-entrance-area {
     background-image: url(../img/sp/m_entrance_bg.png);
@@ -2115,6 +2215,15 @@ nav .nav-area {
     .banner-sec img {
       width: 100%;
       margin: 0 auto; }
+    .banner-sec .text-banner {
+      position: absolute;
+      top: 17%;
+      left: 2%;
+      font-size: 20px;
+      transform-origin: 0 0;
+      transform: rotate(-20deg);
+      font-weight: 600;
+      color: red; }
 
   .invest-sec .invest-area .invest-title {
     padding: 5% 0%; }
@@ -2318,6 +2427,7 @@ nav .nav-area {
                   text-align: center;
                   line-height: 1.7; }
                 .three-block-area .three-block-cont .three-blocks-base .three-blocks-bg .blocks-bg-cont .blocks-bg-flex .blocks-desc p {
+                  width: 100%;
                   font-size: 12px;
                   margin-top: 5%;
                   font-family: a-otf-ryumin-pr6n, serif;
@@ -2325,6 +2435,12 @@ nav .nav-area {
                   color: white;
                   line-height: 1.8;
                   font-weight: 600; }
+          .three-block-area .three-block-cont .three-blocks-base .three-blocks-bg .three-blocks-text-down {
+            position: absolute;
+            bottom: 1%;
+            right: 7%;
+            color: white;
+            font-size: 10px; }
 
   .ranking-sec .ranking-area {
     background-image: url(../img/ranking_bg.png);
@@ -2444,8 +2560,10 @@ nav .nav-area {
       color: white;
       padding-bottom: 4%;
       text-align: left; }
-    .owner-sec .man-area .man-img img {
-      width: 100%; }
+    .owner-sec .man-area .man-img {
+      padding-bottom: 0%; }
+      .owner-sec .man-area .man-img img {
+        width: 100%; }
     .owner-sec .man-area .man-desc {
       margin-top: 2%;
       padding: 2% 5%;
@@ -2744,9 +2862,40 @@ nav .nav-area {
           .sem-info-sec .sem-info-area .sem-info-container p.address span {
             font-size: 20px; }
         .sem-info-sec .sem-info-area .sem-info-container p.other-detail {
-          padding-top: 13%; }
+          padding-top: 8%; }
           .sem-info-sec .sem-info-area .sem-info-container p.other-detail span.title-bt {
-            font-size: 20px; }
+            font-size: 22px; }
+          .sem-info-sec .sem-info-area .sem-info-container p.other-detail span.indent-text {
+            font-size: 22px; }
+      .sem-info-sec .sem-info-area .sem-info-container .address-info {
+        max-width: 200px;
+        margin: 0 auto;
+        padding-top: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        flex-wrap: wrap; }
+        .sem-info-sec .sem-info-area .sem-info-container .address-info .address-title-head {
+          flex-basis: 100%;
+          font-size: 25px;
+          color: white;
+          line-height: 1.6;
+          font-family: a-otf-ryumin-pr6n, serif;
+          text-align: center; }
+        .sem-info-sec .sem-info-area .sem-info-container .address-info .address-title {
+          flex-basis: 48%;
+          font-size: 20px;
+          color: white;
+          line-height: 1.6;
+          font-family: a-otf-ryumin-pr6n, serif;
+          text-align: center; }
+        .sem-info-sec .sem-info-area .sem-info-container .address-info .sub-adress {
+          flex-basis: 48%;
+          font-size: 20px;
+          color: white;
+          line-height: 1.6;
+          font-family: a-otf-ryumin-pr6n, serif;
+          text-align: center; }
     .sem-info-sec .sem-info-area .sem-maps iframe {
       width: 100%;
       height: 350px; }
@@ -3202,7 +3351,7 @@ nav .nav-area {
       align-items: center; }
       .floating-sec .floating-area .cont-btn {
         display: block;
-        flex-basis: 33.3%;
+        flex-basis: 50%;
         text-align: center; }
         .floating-sec .floating-area .cont-btn a img {
           transition: all .4s;
@@ -3212,7 +3361,7 @@ nav .nav-area {
             transition: all .4s;
             opacity: .8; }
       .floating-sec .floating-area .red-btn {
-        flex-basis: 33.3%;
+        flex-basis: 0%;
         text-align: center; }
         .floating-sec .floating-area .red-btn a img {
           transition: all .4s;
@@ -3222,7 +3371,7 @@ nav .nav-area {
             transition: all .4s;
             opacity: .9; }
       .floating-sec .floating-area .yellow-btn {
-        flex-basis: 33.3%;
+        flex-basis: 50%;
         text-align: center; }
         .floating-sec .floating-area .yellow-btn a img {
           margin: 0 auto;
@@ -3230,6 +3379,16 @@ nav .nav-area {
           .floating-sec .floating-area .yellow-btn a img:hover {
             transition: all .4s;
             opacity: .9;
-            transition: all .4s; } }
+            transition: all .4s; }
+        .floating-sec .floating-area .yellow-btn .text-float {
+          text-align: left;
+          position: absolute;
+          top: 5%;
+          left: -1%;
+          font-size: 15px;
+          transform-origin: 0 0;
+          transform: rotate(-20deg);
+          font-weight: 600;
+          color: red; } }
 
 /*# sourceMappingURL=style.css.map */
