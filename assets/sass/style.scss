@@ -313,9 +313,9 @@ nav {
         position: absolute;
         top: 17%;
         left: 2%;
-        font-size: 30px;
+        font-size: 32px;
         transform-origin: 0 0;
-        transform: rotate(-20deg);
+        transform: rotate(-10deg);
         font-weight: 600;
         color: red;
         // text-shadow: 2px 2px #cf9c63;
@@ -1529,7 +1529,7 @@ nav {
                 left: -1%;
                 font-size: 20px;
                 transform-origin: 0 0;
-                transform: rotate(-20deg);
+                transform: rotate(-10deg);
                 font-weight: 600;
                 color: red;
                 // text-shadow: 2px 2px #cf9c63;
@@ -3475,11 +3475,11 @@ nav {
 
         .text-banner {
             position: absolute;
-            top: 17%;
+            top: 15%;
             left: 2%;
-            font-size: 20px;
+            font-size: 16px;
             transform-origin: 0 0;
-            transform: rotate(-20deg);
+            transform: rotate(-10deg);
             font-weight: 600;
             color: red;
             // text-shadow: 2px 2px #cf9c63;
@@ -5200,11 +5200,10 @@ nav {
 
             .cont-btn {
                 display: block;
-                flex-basis: 50%;
+                flex-basis: 0%;
                 text-align: center;
 
                 a {
-
                     img {
                         transition: all .4s;
                         margin: 0 auto;
@@ -5220,7 +5219,7 @@ nav {
 
 
             .red-btn {
-                flex-basis: 0%;
+                flex-basis: 50%;
                 text-align: center;
 
                 a {
@@ -5257,14 +5256,14 @@ nav {
                 .text-float {
                     text-align: left;
                     position: absolute;
-                    top: 5%;
+                    top: -1%;
                     left: -1%;
-                    font-size: 15px;
+                    font-size: 10px;
                     transform-origin: 0 0;
-                    transform: rotate(-20deg);
+                    transform: rotate(-15deg);
                     font-weight: 600;
                     color: red;
-                    // text-shadow: 2px 2px #cf9c63;
+                    // text-shadow: 2px 2px #cf9c63;
                 }
             }
         }

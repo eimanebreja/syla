@@ -211,9 +211,9 @@ nav .nav-area {
     position: absolute;
     top: 17%;
     left: 2%;
-    font-size: 30px;
+    font-size: 32px;
     transform-origin: 0 0;
-    transform: rotate(-20deg);
+    transform: rotate(-10deg);
     font-weight: 600;
     color: red; }
 
@@ -953,7 +953,7 @@ nav .nav-area {
         left: -1%;
         font-size: 20px;
         transform-origin: 0 0;
-        transform: rotate(-20deg);
+        transform: rotate(-10deg);
         font-weight: 600;
         color: red; }
 
@@ -2217,11 +2217,11 @@ nav .nav-area {
       margin: 0 auto; }
     .banner-sec .text-banner {
       position: absolute;
-      top: 17%;
+      top: 15%;
       left: 2%;
-      font-size: 20px;
+      font-size: 16px;
       transform-origin: 0 0;
-      transform: rotate(-20deg);
+      transform: rotate(-10deg);
       font-weight: 600;
       color: red; }
 
@@ -3351,7 +3351,7 @@ nav .nav-area {
       align-items: center; }
       .floating-sec .floating-area .cont-btn {
         display: block;
-        flex-basis: 50%;
+        flex-basis: 0%;
         text-align: center; }
         .floating-sec .floating-area .cont-btn a img {
           transition: all .4s;
@@ -3361,7 +3361,7 @@ nav .nav-area {
             transition: all .4s;
             opacity: .8; }
       .floating-sec .floating-area .red-btn {
-        flex-basis: 0%;
+        flex-basis: 50%;
         text-align: center; }
         .floating-sec .floating-area .red-btn a img {
           transition: all .4s;
@@ -3383,11 +3383,11 @@ nav .nav-area {
         .floating-sec .floating-area .yellow-btn .text-float {
           text-align: left;
           position: absolute;
-          top: 5%;
+          top: -1%;
           left: -1%;
-          font-size: 15px;
+          font-size: 10px;
           transform-origin: 0 0;
-          transform: rotate(-20deg);
+          transform: rotate(-15deg);
           font-weight: 600;
           color: red; } }
 

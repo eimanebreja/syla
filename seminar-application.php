@@ -50,9 +50,12 @@
                     老後の年金資産が2,000万円不足するという資産運用手法の公開。
                     資産運用のプロである中澤氏がここだけの本音を語り、証券会社や不動産投資会社が語りたがらない、失敗事例やリスクについて解説し、実際の投資物件を教材に実際の投資シミュレーションをワークショップ形式で実施していきます。
                 </p>
+
             </div>
             <div class="application-area">
                 <div class="application-form-area">
+
+
                     <div class="form-area">
                         <div class="form-label">
                             <span>※</span> 日程
@@ -60,27 +63,55 @@
                         <div class="form-input only-half">
                             <select name="sem_schedule" id="input-semschedule" class="sched_sel">
                                 <option value="">選択...</option>
-                                <option>11月16日（土曜）1部13:00~15:30</option>
-                                <option>11月16日（土曜）2部16:00~18:30</option>
-                                <option>11月18日（月曜）19:00~21:30</option>
-                                <option>11月19日（火曜）19:00~21:30</option>
-                                <option>11月20日（水曜）19:00~21:30</option>
-                                <option>11月21日（木曜）19:00~21:30</option>
-                                <option>11月22日（金曜）19:00~21:30</option>
-                                <option>11月23日（土曜）1部13:00~15:30</option>
-                                <option>11月23日（土曜）2部16:00~18:30</option>
-                                <option>11月25日（月曜）19:00~21:30</option>
-                                <option>11月26日（火曜）19:00~21:30</option>
-                                <option>11月27日（水曜）19:00~21:30</option>
-                                <option>11月28日（木曜）19:00~21:30</option>
-                                <option>11月29日（金曜）19:00~21:30</option>
-                                <option>11月30日（土曜）1部13:00~15:30</option>
-                                <option>11月30日（土曜）2部16:00~18:30</option>
-                                <option>12月2日（月曜）19:00~21:30</option>
-                                <option>12月3日（火曜）19:00~21:30</option>
-                                <option>12月4日（水曜）19:00~21:30</option>
-                                <option>12月5日（木曜）19:00~21:30</option>
-                                <option>12月6日（金曜）19:00~21:30</option>
+
+                                <?php
+                                    $m= date("m");
+                                    $d= date("d");
+                                    $y= date("Y");
+                                    $dy = date("w"); 
+                                    $dys = array("日曜","月曜","火曜","水曜","木曜","金曜","土曜");
+                                    $dyj = $dys[$dy];
+
+                                    $weekday_time = "19:00~21:30";
+                                    $saturday_time = "1部13:00~15:30";
+                                    $saturday_time_2 = "2部16:00~18:30";   
+                                    for($i=0; $i<=21; $i++){
+                                    $month = date('m',mktime(0,0,0,$m,($d+$i),$y));
+                                    $day = date('d',mktime(0,0,0,$m,($d+$i),$y));
+                                    $l = date('l',mktime(0,0,0,$m,($d+$i),$y));
+                                    $l2 = date('l',mktime(0,0,0,$m,($d+$i),$y));
+                                    $current_d = date('d',mktime(0,0,0,$m,($d),$y));
+                               
+                                    $lbl_day = "";
+                                    switch($l) {
+                                    case	'Sunday': $lbl_day = "日曜"; break;
+                                    case	'Monday': $lbl_day = "月曜"; break;
+                                    case	'Tuesday': $lbl_day = "火曜"; break;
+                                    case	'Wednesday': $lbl_day = "水曜"; break;
+                                    case	'Thursday': $lbl_day = "木曜"; break;
+                                    case	'Friday': $lbl_day = "金曜"; break;
+                                    case	'Saturday': $lbl_day = "土曜"; break;
+                                    }
+                                    ?>
+
+
+
+                                <?php 
+                                        if (($current_d == $day) || ($l == 'Sunday')) {
+                                        } else {
+                                            if ($l == 'Saturday') {
+                                                echo "<option>".$month."月".$day."日 "."(".$lbl_day.")"." ".$saturday_time."</option>";
+                                                echo "<option>".$month."月".$day."日 "."(".$lbl_day.")"." ".$saturday_time_2."</option>";
+                                                } else {
+                                                    echo "<option>".$month."月".$day."日 "."(".$lbl_day.")"." ".$weekday_time."</option>";
+                                                }
+                                        }
+
+                                        ?>
+
+                                <?php   
+                                }
+                                ?>
                             </select>
                         </div>
                     </div>
@@ -441,8 +472,6 @@
             $("#input-semincome").removeClass("makeRed");
             err = false;
         }
-
-
 
 
         if (!err) {
